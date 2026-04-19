@@ -4,24 +4,26 @@ import matplotlib.pyplot as plt
 # Read cleaned data
 df = pd.read_csv("data/cleaned_data.csv")
 
-# Plot 1: experiment_score
+# Plot 1: score plot
 plt.figure()
 df["experiment_score"].plot(kind="bar")
-plt.title("Experiment Scores")
+plt.title("Experiment Score")
 plt.xlabel("Index")
 plt.ylabel("Score")
 plt.tight_layout()
-plt.savefig("results/experiment_score_plot.png")
+plt.savefig("results/score_plot.png")
 plt.close()
 
-# Plot 2: temperature
+# Plot 2: temperature and humidity plot
 plt.figure()
-df["temperature"].plot(kind="line", marker="o")
-plt.title("Temperature")
+plt.plot(df["temperature"], marker="o", label="Temperature")
+plt.plot(df["humidity"], marker="s", label="Humidity")
+plt.title("Temperature and Humidity")
 plt.xlabel("Index")
-plt.ylabel("Temperature")
+plt.ylabel("Value")
+plt.legend()
 plt.tight_layout()
-plt.savefig("results/temperature_plot.png")
+plt.savefig("results/temperature_humidity_plot.png")
 plt.close()
 
-print("Plots saved in results folder")
+print("Plots saved successfully")
