@@ -1,79 +1,78 @@
-# Countering Fake News Using NLP
+# 📊 Data Cleaning and Visualization Workflow
 
-## 📌 Project Overview
+---
 
-This project focuses on detecting and countering fake news using Natural Language Processing (NLP) techniques. With the rapid spread of misinformation online, this system aims to analyze textual data and classify news articles as **real** or **fake**, helping users identify trustworthy information.
+## 1. Project Title
+Data Cleaning and Visualization Workflow for Experimental Dataset
 
-## 🎯 Objectives
+---
 
-* Build a machine learning model to classify fake vs real news.
-* Apply NLP techniques for text preprocessing and feature extraction.
-* Evaluate model performance using standard metrics.
-* Provide insights into patterns commonly found in fake news.
+## 2. Project Structure
 
-## 📂 Project Structure
+phd-research-workflow/
+│
+├── data/
+│   ├── sample_data.csv
+│   └── cleaned_data.csv
+│
+├── src/
+│   ├── clean_data.py
+│   └── visualize_data.py
+│
+├── results/
+│   ├── score_plot.png
+│   └── temperature_humidity_plot.png
+│
+├── docs/
+│   └── analysis_notes.md
+│
+├── README.md
+└── .gitignore
 
-```
-├── README.md        # Project documentation
-├── docs/            # Documentation files, reports, and notes
-├── src/             # Source code (data processing, model training, evaluation)
-├── data/            # Dataset (raw and processed data)
-├── results/         # Model outputs, evaluation results, visualizations
-├── references/      # Research papers, articles, and external resources
-```
+---
 
-## 📁 Folder Descriptions
+## 3. Files and Folders Used
 
-* **docs/**
-  Contains project documentation such as design notes, methodology, and reports.
+- data/sample_data.csv: Raw dataset  
+- data/cleaned_data.csv: Cleaned dataset  
+- src/clean_data.py: Data preprocessing script  
+- src/visualize_data.py: Visualization script  
+- results/: Stores generated plots  
+- docs/analysis_notes.md: Analysis documentation  
 
-* **src/**
-  Includes all source code files for preprocessing, training models, and evaluation.
+---
 
-* **data/**
-  Stores datasets used in the project, including raw and cleaned data.
+## 4. How to Run the Project
 
-* **results/**
-  Contains outputs such as trained models, graphs, and evaluation metrics.
+### Step 1: Clean data
+python src/clean_data.py
 
-* **references/**
-  Includes links, research papers, and materials referenced during the project.
+### Step 2: Visualize data
+python src/visualize_data.py
 
-## ⚙️ Technologies Used
+---
 
-* Python
-* Natural Language Processing (NLP)
-* Scikit-learn / TensorFlow / PyTorch
-* Pandas, NumPy
-* Matplotlib / Seaborn
+## 5. Expected Outputs
 
-## 🔍 Methodology
+- data/cleaned_data.csv  
+- results/score_plot.png  
+- results/temperature_humidity_plot.png  
 
-1. Data collection and cleaning
-2. Text preprocessing (tokenization, stopword removal, stemming/lemmatization)
-3. Feature extraction (TF-IDF, word embeddings)
-4. Model training (e.g., Logistic Regression, Naive Bayes, or Deep Learning models)
-5. Evaluation (Accuracy, Precision, Recall, F1-score)
+---
 
-## 📊 Expected Outcomes
+## 6. Assumptions
 
-* A trained model capable of detecting fake news with good accuracy.
-* Visualization of results and performance metrics.
-* Insights into linguistic patterns of fake news.
+- Missing values are filled using mean imputation  
+- Dataset structure remains consistent  
+- Median method can be used in future  
 
-## 🚀 Future Work
+---
 
-* Improve model accuracy using advanced deep learning models (e.g., LSTM, BERT)
-* Deploy as a web application or API
-* Expand dataset for better generalization
+## 7. Future Scope
 
-## 📚 References
+- Improve data cleaning techniques  
+- Add outlier handling  
+- Enhance visualization  
+- Automate workflow  
 
-* Research papers on fake news detection
-* NLP and machine learning documentation
-* Online datasets and repositories
-
-## 👤 Author
-
-Phi Van Thanh 
-
+---
